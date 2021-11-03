@@ -2,7 +2,7 @@ const express = require("express")
 const http = require("http");
 
 
-const PORT = process.env.port || 3000;
+const PORT = process.env.port || 5000;
 const app = express()
 app.use(express.static("static"))
 
@@ -12,5 +12,5 @@ app.get("/", (req, res) => {
 
 
 http.createServer(app).listen(PORT, () => {
-    console.log(`Server started at ${PORT} http://localhost:3000`);
+    console.log(`Server started at ${PORT} http://localhost:${PORT}`);
 })

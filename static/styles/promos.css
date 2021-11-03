@@ -1,7 +1,5 @@
 .promos{
     position: relative;
-    display: flex;
-    flex-direction: column;
     z-index:100;
 }
 .promos__line{

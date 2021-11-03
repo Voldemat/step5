@@ -5,42 +5,50 @@
 	background-color: #000;
 }
 .header__body {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	height: 80px;
 }
+
+/* LOGO */
 .header__logo-wrapper {
 	fill: #fff;
+	z-index:1;
 }
+.header__logo{
+	transition: transform 0.5s ease;
+	transform-origin: center right;
+}
+.header__logo.active{
+	transform: scale(1.2) translateX(15px) translateY(3px);
+}
+
+/* Menu */
 .header__menu {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	flex: 1;
-	display: flex;
-	justify-content: center;
-    flex-direction: column;
-	align-items: center;
-	/* margin-left:clamp(20px, 2.5vw, 40px); */
-	transform: translateY(-200px);
+	max-height:100vh;
+	
+	transform: translateY(-50%);
+	padding-top: calc(70px + 80px + 30px); /* height of promos section + height of header block + actual padding*/
+    overflow:auto;
+
 	opacity: 0;
 	color: #fff;
-	padding-top: 100px;
 	background-color: #000;
-    overflow-y: auto;
 	transition: transform 0.5s ease 0.1s, opacity 0.5s ease;
-    min-height:50vh;
 }
 .header__menu.active {
 	transform: translateY(0px);
 	opacity: 1;
 }
-.header__item{
-	margin-bottom: 25px;
-}
+
+/* Header Menu Items Wrapper */
 .header__wrapper {
 	display: flex;
 	flex-direction: column;
@@ -50,13 +58,72 @@
 }
 
 
+/* Header Menu Item */
+.header__item{
+	margin-bottom: 10vh;
+	transform: translateX(-50%);
+	text-align: center;
+	
+	opacity: 0;
+	transition: opacity 0.5s ease, transform calc(0.2s  + 0.1s* var(--i)) ease;
+}
+.header__menu.active .header__item{
+	transition: opacity 0.5s ease calc(0.3s + 0.1s * var(--i)), transform 0.5s ease calc(0.3s + 0.1s * var(--i));
+
+	transform: translateX(0px);
+	opacity:1;
+}
+/* Header Menu Link */
+.header__link{
+	position: relative;
+
+	color:#fff;
+	font-size: clamp(18px, 3vh, 30px);
+	text-transform: capitalize;
+	text-decoration: none;
+}
+/* Decoration Hover Line */
+.header__link::after{
+	position: absolute;
+	content:"";
+	bottom:-3px;
+	left:0;
+	width:0;
+	border-bottom: 2px solid #fff;
+	transition: width 0.5s ease 0.1s;
+}
+.header__link:hover::after{
+	width:100%;
+}
+.header__link:active::after{
+	width:100%;
+}
 
 
 
 
 
 
-
+@media screen and (min-width:992px){
+	.header__burger{display:none}
+	.header__menu{
+		all:unset;
+		width:100%;
+		display: flex;
+		justify-content: space-between;
+		margin-left:clamp(30px, 3vw, 40px);
+	}
+	.header__wrapper{
+		flex-direction: row;
+	}
+	.header__item{
+		all:unset;
+		margin-left:clamp(25px, 3vw, 50px);
+	}
+	.header__link{
+		font-size:14px;
+	}
+}
 
 
 
