@@ -2,7 +2,7 @@ const express = require("express")
 const http = require("http");
 
 
-const PORT = process.env.port || 5000;
+const PORT = process.env.port || 3000;
 const app = express()
 app.use(express.static("static"))
 

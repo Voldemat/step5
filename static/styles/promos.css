@@ -1,6 +1,6 @@
 .promos{
     position: relative;
-    z-index:100;
+    z-index:100000000000;
 }
 .promos__line{
     display: flex;

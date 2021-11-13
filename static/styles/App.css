@@ -1,3 +1,4 @@
+@import url("../third-party/font-awesome.min.css");
 @font-face {
 	font-family: "Roboto";
 	src: url("../fonts/Roboto.woff") format("woff");
@@ -10,6 +11,7 @@
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
+	color:#333333;
 	outline: none;
 }
 h1, h2, h3, h4, h5{
@@ -18,8 +20,7 @@ h1, h2, h3, h4, h5{
 } 
 .container {
 	position: relative;
-	max-width: 1500px;
-	padding: 0 40px;
+	max-width: 1600px;
 	margin: 0 auto;
 }
 .block-scroll{
@@ -39,7 +40,6 @@ body{
 }
 
 
-
 /* @media screen and (max-width: 1200px){
     .container{
         max-width:1100px;
@@ -50,6 +50,11 @@ body{
     .container{
         max-width:900px;
     }
+} */
+/* @media screen and (min-width:1500px){
+	.container{
+		padding:0 40px;
+	}
 } */
 
 @media screen and (max-width: 767px){
