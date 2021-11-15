@@ -74,22 +74,9 @@ section.product {
 	margin-bottom: var(--margin-value);
 }
 
-/* Buttons */
-.content__button {
-	position: relative;
-	width: 100%;
-	padding: 20px;
-	text-align: center;
-	box-shadow: none;
-	background: transparent;
-}
 
-.content__button + .content__button {
-    /* Margin Between Buttons */
-    margin-top: var(--margin-value);
-}
 
-/* Modificators */
+/* Modificators of Buttons*/
 .content__button-addtoshopcart {
 	background-color: #333333;
 	color: #f6f5e8;
@@ -101,16 +88,7 @@ section.product {
 	justify-content: space-between;
 }
 
-/* Icon inside button */
-.content__icon {
-	min-width: 12px;
-	min-height: 12px;
-}
-.content__icon::before {
-	position: absolute;
-	bottom: 50%;
-	transform: translateY(50%);
-}
+
 
 @media screen and (min-width: 767px) {
 	section.product {

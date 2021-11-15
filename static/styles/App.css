@@ -62,3 +62,33 @@ body{
         padding:0 20px;
     }
 }
+
+
+
+
+/* Buttons */
+.button-block__button {
+	position: relative;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	box-shadow: none;
+	background: transparent;
+	border:2px solid #000;
+}
+
+.button-block__button + .button-block__button {
+    /* Margin Between Buttons */
+    margin-top: var(--margin-value);
+}
+
+/* Icon inside button */
+.button-block__icon {
+	min-width: 12px;
+	min-height: 12px;
+}
+.button-block__icon::before {
+	position: absolute;
+	bottom: 50%;
+	transform: translateY(50%);
+}

@@ -14,9 +14,26 @@
 		<link rel="stylesheet" href="styles/header.css" type="text/css" />
 		<link rel="stylesheet" href="styles/main.css" type="text/css" />
 		<link rel="stylesheet" href="styles/footer.css" type="text/css" />
-		<link rel="stylesheet" href="styles/components/product-detail.css" text="text/css" />
-		<link rel="stylesheet" href="styles/components/image-box.css" text="text/css" />
-		<link rel="stylesheet" href="styles/components/product-slider.css" text="text/css" />
+		<link
+			rel="stylesheet"
+			href="styles/components/product-detail.css"
+			text="text/css"
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/components/image-box.css"
+			text="text/css"
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/components/product-slider.css"
+			text="text/css"
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/components/shopitem.css"
+			text="text/css"
+		/>
 		<link rel="stylesheet" href="styles/promos.css" text="text/css" />
 		<title>Aesop</title>
 	</head>
@@ -89,60 +106,77 @@
 					<nav class="header__menu">
 						<div class="header__container">
 							<div class="header__line"></div>
-						<ul class="header__wrapper header__wrapper-first">
-							<li
-								class="header__item"
-								style="--i: 1"
+							<ul
+								class="
+									header__wrapper
+									header__wrapper-first
+								"
 							>
-								<a href="#" class="header__link"
-									>Einkaufen</a
+								<li
+									class="header__item"
+									style="--i: 1"
 								>
-							</li>
-							<li
-								class="header__item"
-								style="--i: 2"
-							>
-								<a href="#" class="header__link"
-									>Lesen</a
+									<a
+										href="#"
+										class="header__link"
+										>Einkaufen</a
+									>
+								</li>
+								<li
+									class="header__item"
+									style="--i: 2"
 								>
-							</li>
-							
-							<li
-								class="header__item"
-								style="--i: 3"
-							>
-								<a href="#" class="header__link"
-									>Standorte</a
+									<a
+										href="#"
+										class="header__link"
+										>Lesen</a
+									>
+								</li>
+
+								<li
+									class="header__item"
+									style="--i: 3"
 								>
-							</li>
-							<li
-								class="header__item"
-								style="--i: 4"
-							>
-								<a href="#" class="header__link"
-									>Suchen</a
+									<a
+										href="#"
+										class="header__link"
+										>Standorte</a
+									>
+								</li>
+								<li
+									class="header__item"
+									style="--i: 4"
 								>
-							</li>
-						</ul>
-						<ul class="header__wrapper">
-							<li
-								class="header__item"
-								style="--i: 5"
-							>
-								<a href="#" class="header__link"
-									>Anmelden</a
+									<a
+										href="#"
+										class="header__link"
+										>Suchen</a
+									>
+								</li>
+							</ul>
+							<ul class="header__wrapper">
+								<li
+									class="header__item"
+									style="--i: 5"
 								>
-							</li>
-							<li
-								class="header__item"
-								style="--i: 6"
-							>
-								<a href="#" class="header__link"
-									>Warenkorb</a
+									<a
+										href="#"
+										class="header__link"
+										>Anmelden</a
+									>
+								</li>
+								<li
+									class="header__item"
+									style="--i: 6"
 								>
-							</li>
-						</ul>
-					</div>
+									<a
+										href="#"
+										class="header__link"
+										>Warenkorb</a
+									>
+								</li>
+							</ul>
+						</div>
 					</nav>
 					<div class="header__burger burger">
 						<svg
@@ -243,11 +277,17 @@
 				</div>
 				<div class="product__content content container">
 					<div class="content__link-wrapper">
-						<a class="content__link" href="#">Schließen</a>
+						<a class="content__link" href="#"
+							>Schließen</a
+						>
 					</div>
 					<div class="content__wrapper">
 						<div class="content__image-box">
-							<img class="content__image" src="images/product2.png" alt="" />
+							<img
+								class="content__image"
+								src="images/product2.png"
+								alt=""
+							/>
 						</div>
 						<div class="content__main">
 							<h2 class="content__title">
@@ -271,10 +311,15 @@
 									betont lässig.
 								</p>
 							</div>
-							<div class="content__button-wrapper">
+							<div
+								class="
+									content__button-wrapper
+									button-block
+								"
+							>
 								<button
 									class="
-										content__button
+										button-block__button
 										content__button-addtoshopcart
 									"
 								>
@@ -283,144 +328,350 @@
 								</button>
 								<button
 									class="
-										content__button
+										button-block__button
 										content__button-about
 									"
 								>
 									Sculpt Hair Polish
 									entdecken
-									<i class="content__icon fa fa-arrow-right" aria-hidden="true"></i>
+									<i
+										class="
+											button-block__icon
+											fa
+											fa-arrow-right
+										"
+										aria-hidden="true"
+									></i>
 								</button>
 							</div>
 						</div>
 					</div>
-					<div class="empty" style="height: 20px;"></div>
+					<div class="empty" style="height: 20px"></div>
 				</div>
 			</section>
 			<section class="product-slider container">
 				<div class="product-slider__wrapper">
 					<div class="product-slider__slider swiper">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide product-slider__card card">
-								<div class="card__image-wrapper">
-									<img src="images/product-slider/item1.png" alt="" class="card__image">
+							<div
+								class="
+									swiper-slide
+									product-slider__card
+									card
+								"
+							>
+								<div
+									class="
+										card__image-wrapper
+									"
+								>
+									<img
+										src="images/product-slider/item1.png"
+										alt=""
+										class="card__image"
+									/>
 								</div>
 								<div class="card__content">
 									<p class="card__text">
-										Rose Hair & Scalp Moisturising Masque
+										Rose Hair & Scalp
+										Moisturising Masque
 									</p>
 									<p class="card__text">
-										Hält Kopfhaut und Haar in bestem Zustand
+										Hält Kopfhaut und
+										Haar in bestem
+										Zustand
 									</p>
 								</div>
 							</div>
-							<div class="swiper-slide product-slider__card">
-								<div class="card__image-wrapper">
-									<img src="images/product-slider/item2.png" alt="" class="card__image">
+							<div
+								class="
+									swiper-slide
+									product-slider__card
+								"
+							>
+								<div
+									class="
+										card__image-wrapper
+									"
+								>
+									<img
+										src="images/product-slider/item2.png"
+										alt=""
+										class="card__image"
+									/>
 								</div>
 								<div class="card__content">
 									<p class="card__text">
 										Classic Shampoo
 									</p>
 									<p class="card__text">
-										Eine milde, aber dennoch effektive Reinigung
+										Eine milde, aber
+										dennoch effektive
+										Reinigung
 									</p>
 								</div>
 							</div>
-							<div class="swiper-slide product-slider__card">
-								<div class="card__image-wrapper">
-									<img src="images/product-slider/item3.png" alt="" class="card__image">
+							<div
+								class="
+									swiper-slide
+									product-slider__card
+								"
+							>
+								<div
+									class="
+										card__image-wrapper
+									"
+								>
+									<img
+										src="images/product-slider/item3.png"
+										alt=""
+										class="card__image"
+									/>
 								</div>
 								<div class="card__content">
 									<p class="card__text">
 										Classic Conditioner
 									</p>
 									<p class="card__text">
-										Eine leichte, nährstoffreiche Pflege
+										Eine leichte,
+										nährstoffreiche
+										Pflege
 									</p>
 								</div>
 							</div>
-							<div class="swiper-slide product-slider__card card">
-								<div class="card__image-wrapper">
-									<img src="images/product-slider/item1.png" alt="" class="card__image">
+							<div
+								class="
+									swiper-slide
+									product-slider__card
+									card
+								"
+							>
+								<div
+									class="
+										card__image-wrapper
+									"
+								>
+									<img
+										src="images/product-slider/item1.png"
+										alt=""
+										class="card__image"
+									/>
 								</div>
 								<div class="card__content">
 									<p class="card__text">
-										Rose Hair & Scalp Moisturising Masque
+										Rose Hair & Scalp
+										Moisturising Masque
 									</p>
 									<p class="card__text">
-										Hält Kopfhaut und Haar in bestem Zustand
+										Hält Kopfhaut und
+										Haar in bestem
+										Zustand
 									</p>
 								</div>
 							</div>
-							<div class="swiper-slide product-slider__card">
-								<div class="card__image-wrapper">
-									<img src="images/product-slider/item2.png" alt="" class="card__image">
+							<div
+								class="
+									swiper-slide
+									product-slider__card
+								"
+							>
+								<div
+									class="
+										card__image-wrapper
+									"
+								>
+									<img
+										src="images/product-slider/item2.png"
+										alt=""
+										class="card__image"
+									/>
 								</div>
 								<div class="card__content">
 									<p class="card__text">
 										Classic Shampoo
 									</p>
 									<p class="card__text">
-										Eine milde, aber dennoch effektive Reinigung
+										Eine milde, aber
+										dennoch effektive
+										Reinigung
 									</p>
 								</div>
 							</div>
-							<div class="swiper-slide product-slider__card">
-								<div class="card__image-wrapper">
-									<img src="images/product-slider/item3.png" alt="" class="card__image">
+							<div
+								class="
+									swiper-slide
+									product-slider__card
+								"
+							>
+								<div
+									class="
+										card__image-wrapper
+									"
+								>
+									<img
+										src="images/product-slider/item3.png"
+										alt=""
+										class="card__image"
+									/>
 								</div>
 								<div class="card__content">
 									<p class="card__text">
 										Classic Conditioner
 									</p>
 									<p class="card__text">
-										Eine leichte, nährstoffreiche Pflege
+										Eine leichte,
+										nährstoffreiche
+										Pflege
 									</p>
 								</div>
 							</div>
-							<div class="swiper-slide product-slider__card card">
-								<div class="card__image-wrapper">
-									<img src="images/product-slider/item1.png" alt="" class="card__image">
+							<div
+								class="
+									swiper-slide
+									product-slider__card
+									card
+								"
+							>
+								<div
+									class="
+										card__image-wrapper
+									"
+								>
+									<img
+										src="images/product-slider/item1.png"
+										alt=""
+										class="card__image"
+									/>
 								</div>
 								<div class="card__content">
 									<p class="card__text">
-										Rose Hair & Scalp Moisturising Masque
+										Rose Hair & Scalp
+										Moisturising Masque
 									</p>
 									<p class="card__text">
-										Hält Kopfhaut und Haar in bestem Zustand
+										Hält Kopfhaut und
+										Haar in bestem
+										Zustand
 									</p>
 								</div>
 							</div>
-							<div class="swiper-slide product-slider__card">
-								<div class="card__image-wrapper">
-									<img src="images/product-slider/item2.png" alt="" class="card__image">
+							<div
+								class="
+									swiper-slide
+									product-slider__card
+								"
+							>
+								<div
+									class="
+										card__image-wrapper
+									"
+								>
+									<img
+										src="images/product-slider/item2.png"
+										alt=""
+										class="card__image"
+									/>
 								</div>
 								<div class="card__content">
 									<p class="card__text">
 										Classic Shampoo
 									</p>
 									<p class="card__text">
-										Eine milde, aber dennoch effektive Reinigung
+										Eine milde, aber
+										dennoch effektive
+										Reinigung
 									</p>
 								</div>
 							</div>
-							<div class="swiper-slide product-slider__card">
-								<div class="card__image-wrapper">
-									<img src="images/product-slider/item3.png" alt="" class="card__image">
+							<div
+								class="
+									swiper-slide
+									product-slider__card
+								"
+							>
+								<div
+									class="
+										card__image-wrapper
+									"
+								>
+									<img
+										src="images/product-slider/item3.png"
+										alt=""
+										class="card__image"
+									/>
 								</div>
 								<div class="card__content">
 									<p class="card__text">
 										Classic Conditioner
 									</p>
 									<p class="card__text">
-										Eine leichte, nährstoffreiche Pflege
+										Eine leichte,
+										nährstoffreiche
+										Pflege
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="product-slider__line swiper-scrollbar"></div>
+					<div
+						class="
+							product-slider__line
+							swiper-scrollbar
+						"
+					></div>
+				</div>
+			</section>
+			<section class="shopitem container">
+				<div class="shopitem__wrapper">
+					<div class="shopitem__content">
+						<div class="shopitem__content-wrapper">
+							<span class="shopitem__subtitle">
+								Vitamin C für Tag und Nacht
+							</span>
+							<h1 class="shopitem__title">
+								Um die Struktur der Haut zu
+								unterstützen
+							</h1>
+							<p class="shopitem__text">
+								Vitamin C ist essentiell, um die
+								Widerstandsfähigkeit der Haut zu
+								erhöhen. Der effektive
+								Inhaltsstoff kann sowohl morgens
+								als auch abends angewendet
+								werden und bietet bei
+								langfristiger, regelmäßiger
+								Anwendung enorme Vorteile für
+								die Haut.
+							</p>
+							<div class="shopitem__buttons">
+								<button
+									class="
+										button-block__button
+										shopitem__button
+									"
+								>
+									Erfahren Sie mehr über
+									Vitamin C
+									<i
+										class="
+											button-block__icon
+											shopitem__button-icon
+											fa
+											fa-arrow-right
+										"
+										aria-hidden="true"
+									></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="shopitem__image-container">
+						<img
+							src="images/shopitem1.jpg"
+							alt=""
+							class="shopitem__image"
+						/>
+					</div>
 				</div>
 			</section>
 		</main>
