@@ -14,10 +14,28 @@ const productSlider = () => {
     /**
      * @type {Swiper} 
      */
-    const slider = new Swiper(".swiper", {
+    const slider = new Swiper(".swiper-1", {
         slidesPerView:1,
         scrollbar:{
-            el:".swiper-scrollbar",
+            el:".swiper-scrollbar-1",
+            draggable: true,
+            dragClass:"product-slider__drag-line",
+            dragSize:"auto",
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            767: {
+                slidesPerView: 2,
+            },
+            1200:{
+                slidesPerView:3
+            }
+           },
+    });
+    const slider2 = new Swiper(".swiper-2", {
+        slidesPerView:1,
+        scrollbar:{
+            el:".swiper-scrollbar-2",
             draggable: true,
             dragClass:"product-slider__drag-line",
             dragSize:"auto",
@@ -34,6 +52,7 @@ const productSlider = () => {
     });
     
     window.slider = slider;
+    window.slider2 = slider2;
 }
 
 document.addEventListener("DOMContentLoaded", function() {

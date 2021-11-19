@@ -64,16 +64,6 @@
 	height: calc(100vh - 200px);
 
 }
-.header__line{
-	position: fixed;
-	width:100%;
-	border-bottom: 3px solid transparent;
-}
-@media screen and (max-height:567px){
-	.header__line{
-		border-color: white;
-	}
-}
 
 
 /* Header Menu Items Wrapper */
@@ -157,7 +147,6 @@
 	.header__link{
 		font-size:14px;
 	}
-	.header__line{display: none;}
 
 	.header__container{
 		display: flex;

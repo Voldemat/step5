@@ -1,5 +1,6 @@
 .product-slider__wrapper{
-      padding:clamp(50px, 15vw, 100px) clamp(20px, 10vw, 40px);
+      padding:clamp(50px, 25vw, 100px) clamp(20px, 7vw, 40px);
+      /* padding:clamp(50px, 25vw, 100px) clamp(20px, 10vw, 40px); */
 }
 .product-slider__slider .swiper-wrapper{
       height:unset;
@@ -21,7 +22,9 @@
       border-radius:0;
       background-color: rgba(0, 0, 0, 0.6);
 }
-
+.product-slider__card{
+      height:unset;
+}
 .card__image-wrapper{
       margin-bottom:10px;
       position: relative;
@@ -35,8 +38,7 @@
       left:0;
       height:100%;
       width:100%;
-      /* object-fit: cover; */
-      /* object-position: bottom center; */
+      object-fit: contain;
 }
 .card__content{
       text-align: center;
